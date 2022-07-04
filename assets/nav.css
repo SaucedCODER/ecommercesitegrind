@@ -1,0 +1,40 @@
+nav{
+  position:fixed;
+  z-index:11;
+  inset:0 ;
+  background-color: rgba(0, 0, 0, 0.750);
+  opacity: 0;
+  visibility: hidden;
+  transition:opacity 200ms;
+}
+.link-wrapper{
+  position:fixed;
+  z-index:12;
+    inset:0 40% 0 0;
+    background-color: white;
+    display:flex;
+    flex-direction:column;
+  padding: 1.5em;
+  transform: translateX(-100%);
+  transition:all 300ms ease-in-out;
+
+
+}
+nav .close-btn{
+width: 15px;
+margin-bottom: 2rem;
+}
+nav a{
+  margin-top:1rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: #222;
+}
+nav.open-4nav{
+  opacity: 1;
+  visibility: visible;
+
+}
+nav .open-4navchild{
+  transform: translateX(0);
+}
